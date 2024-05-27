@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0.5
+    container_name: mongodb
+    ports:
+      - "27018:27017"
+    networks:
+      - youtube-app-network
+    volumes:
+      - mongodb_data:/data/db
+
+networks:
+  youtube-app-network:
+    external: true
+
+volumes:
+  mongodb_data:
