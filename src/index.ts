@@ -31,3 +31,6 @@ app.get("/docs", async (req: Request, res: Response) => {
 app.listen(5001, () => {
   console.log(`[server]: Server is running at http://localhost:5001`);
 });
+
+// https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/main/functions/helloworld/helloworldGet/index.js
+// https://cloud.google.com/functions/docs/create-deploy-gcloud
