@@ -1,3 +1,4 @@
 node_modules
 dist
 dependencies/mongodb_data
+.env
